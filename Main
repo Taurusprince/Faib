@@ -1,0 +1,37 @@
+# Character Actions (4-bit encoding)
+Attack:    0001
+Defend:    0010
+Hold Your Ground: 0011
+Special Move: 0100
+Ultimate Attack: 0101
+
+# Character Status (2-bit encoding)
+Healthy:   00
+Injured:   01
+Critical:  10
+Knocked Out: 11
+
+# Battle Outcomes (3-bit encoding)
+No Effect:  000
+Minor Damage: 001
+Moderate Damage: 010
+Heavy Damage: 011
+Critical Damage: 100
+Miss: 101
+Dodged: 110
+Blocked: 111
+
+# Turn-based Actions (2-bit encoding)
+Character 1's Turn: 00
+Character 2's Turn: 01
+Character 3's Turn: 10
+Opponent’s Turn: 11
+
+# Example of Binary Data
+Zeus's Action: Attack → 0001
+Superman's Status: Injured → 01
+Damage Outcome: Moderate Damage → 010
+Current Turn: Character 1's Turn → 00
+
+# Combined Example Binary Sequence
+0001 01 010 00
